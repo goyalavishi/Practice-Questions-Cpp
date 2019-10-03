@@ -1,4 +1,3 @@
-//Find Sum
 
 //Header files
 #include<iostream>
