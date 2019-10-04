@@ -24,7 +24,7 @@ void printoutput(fstream& infile,int i,int j,int n,int s[], int &t)
 } 
 
 //Ordering matrix
-void matrixorder(fstream& infile,int arr[], int n) 
+void matrixorder(fstream& infile,int arr[], int n)  //Function Definition
 { 
     int cost[n][n]; 
     int s[n][n]; 
@@ -69,7 +69,7 @@ int main(int argc,char *argv[])
 	int n=i-1;
 	fstream outfile;
 	outfile.open(argv[2],ios::out);
-    matrixorder(outfile,arr,n);
+    matrixorder(outfile,arr,n);   //Function calling
 	outfile.close(); 
     return 0; 
 }
