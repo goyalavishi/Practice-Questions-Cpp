@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 #include<sstream>
 
-
 using namespace std;
 
 int main (int argc,char* argv[])
@@ -15,9 +14,8 @@ int main (int argc,char* argv[])
 	unsigned int i = val1.find(val2); 
     if (i != string::npos) 
         cout <<(i+1) ; 
-        else
+    else
         cout<<"0";
-   
    
    return 0;
 }
