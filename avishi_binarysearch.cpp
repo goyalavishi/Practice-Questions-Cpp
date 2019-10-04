@@ -8,23 +8,23 @@ using namespace std;
 int comp;
 
 //binary search
-int binarysearchfunction(int array1[], int lowerlimit, int upperlimit, int element) 
+int binarySearchFunction(int array1[], int lowerlimit, int upperlimit, int element) 
 { 
 if (upperlimit >= lowerlimit) { 
-        int middleterm = (lowerlimit+upperlimit) / 2; 
-        if (array1[middleterm] == element) 
+        int mid = (lowerlimit+upperlimit) / 2; 
+        if (array1[mid] == element) 
        {comp++;
-            return middleterm; 
+            return mid; 
   	} 
-       else if (array1[middleterm] > element) 
+       else if (array1[mid] > element) 
        {
        	comp++;
-       	return binarysearchfunction(array1, lowerlimit, middleterm - 1, element); 
+       	return binarysearchfunction(array1, lowerlimit, mid - 1, element); 
 	   }
             
   		else
   		{comp++;
-		  return binarysearchfunction(array1, middleterm + 1, upperlimit, element); 
+		  return binarysearchfunction(array1, mid + 1, upperlimit, element); 
 		  }
         
     } 
