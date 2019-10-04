@@ -10,8 +10,8 @@ using namespace std;
 int main(int argc,char **argv)
 {
 	ifstream inf(argv[1]);
-	int val[10000];
-	int x=0;
+	int val[1000];
+	int x=0;     //declaration and intialization of variable x
 	while(inf)
 	{
 	    string input;
