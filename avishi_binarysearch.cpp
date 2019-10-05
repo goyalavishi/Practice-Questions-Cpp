@@ -1,4 +1,4 @@
-//Binary search
+//C++ program of Binary search
 #include <iostream>
 #include <stdio.h>
 #include <fstream> 
@@ -10,7 +10,7 @@ int comp;
 //binary search
 int binarysearchfunction(int array1[], int lowerlimit, int upperlimit, int element) 
 { 
-if (upperlimit >= lowerlimit) { 
+if (upperlimit >= lowerlimit)//upper limit is compared with lowerlimit { 
         int middleterm = (lowerlimit+upperlimit) / 2; 
         if (array1[middleterm] == element) 
        {comp++;
