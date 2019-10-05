@@ -1,4 +1,5 @@
 //Binary search
+//Practice Daily
 #include <iostream>
 #include <stdio.h>
 #include <fstream> 
